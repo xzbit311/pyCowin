@@ -5,7 +5,7 @@ base_cowin_url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/c
 now = datetime.now()
 today_date = now.strftime("%d-%m-%Y")
 api_url_telegram = "https://api.telegram.org/bot1894498260:AAHAucbm8v5_ALyPpUnr2HVrfWE1Ue0XXs0/sendMessage?chat_id=@COWIN_BPL_INFO&text="
-#groupid = ""__groupid__
+#groupid = "__groupid__"
 
 def fetch_data_from_cowin(district_id):
   query_params = "?district_id={}&date={}".format(district_id,today_date)
